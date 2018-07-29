@@ -1,0 +1,12 @@
+<div class="navbar">
+    <div class="container container-wide">
+        <a href="{{ '/' | prepend: site.baseurl }}" class="brand">
+            {% if {{site.brand-logo }}%}
+                <img src="{{ site.brand-logo | relative_url }}" alt="logo">
+            {% else %}
+                {{ site.title }}
+            {% endif %} 
+        </a>
+        {% include navigation.html %}
+    </div>
+</div>

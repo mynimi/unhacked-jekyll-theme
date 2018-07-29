@@ -1,0 +1,83 @@
+header {
+    .home &{
+        @include paddinghack(100%, $home-header-ratio-width, $home-header-ratio-height, '.background'); // overflow: hidden;
+    }
+    .page &{
+        @include paddinghack(100%, $page-header-ratio-width, $page-header-ratio-height, '.background'); // overflow: hidden;
+    }
+    .post &{
+        @include paddinghack(100%, $post-header-ratio-width, $post-header-ratio-height, '.background'); // overflow: hidden;
+    }
+    .background {
+        background-position: center;
+        background-size: cover;
+        background-image: url($header-image);
+    }
+}
+
+.title-container {
+    position: absolute;
+    right: 0;
+    transform: translateY(-110%);
+    text-align: right;
+    .no-header &{
+        transform: translateY(0);
+        position: relative;
+        text-align: center;
+    }
+    @media screen and (max-width: $title-box-break) {
+        transform: translateY(0);
+        position: relative;
+        text-align: center;
+    }
+}
+
+.title-wrapper {
+    position: relative;
+    bottom: 0;
+    line-height: 1;
+    z-index: 2;
+    margin: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    @media screen and (min-width: $title-box-break + 1) {
+        @if ($title-background-box) {
+            $bg: white;
+            @if($image-dark) {
+                $bg: black;
+            }
+            background: rgba($bg, .4);
+        }
+        $box-color: black;
+        @if ($image-dark) {
+            $box-color: white;
+        }
+        color: $box-color;
+        padding: $title-box-padding;
+    }
+
+    .no-header & {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0;
+        width: auto;
+        display: inline-block;
+        font-family: $main-font;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 3em;
+    }
+    h2 {
+        font-family: $headings-font;
+        font-style: italic;
+        font-weight: normal;
+        margin: 0;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,29 @@
+$main-font: 'Asap', 'Helvetica', sans-serif !default;
+$main-font-size: 18px !default;
+$mobile-main-font-size: 20px !default;
+
+$main-font-weight: normal !default;
+$main-line-height: 1.4em !default;
+
+$headings-font: 'Playfair Display', 'Cambria', serif !default;
+$headings-text-transform: none !default;
+$headings-font-weight: bold !default;
+
+$text-color: $darkgray !default;
+$main-background-color: $whiteish !default;
+
+$hyphenate: auto !default;
+$p-text-align: justify !default;
+$font-break: 700px !default;
+
+$link-color: $accent-color !default;
+$link-hover-color:$text-color !default;
+
+$container-width: 70% !default;
+$container-max-width: 900px !default;
+$container-padding: 20px !default;
+
+$title-box-padding: 20px !default;
+$title-box-break: 1000px !default;
+
+$code-font: 'Ubuntu Mono', monospace !default;

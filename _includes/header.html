@@ -1,0 +1,5 @@
+{% if page.header-display != 'false' %}
+<header>
+    <div class="background" {% if page.featured-image %}style="background-image: url({{page.featured-image | relative_url}});"{% endif %}></div>
+</header>
+{% endif %}

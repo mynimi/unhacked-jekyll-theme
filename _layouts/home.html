@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="home {% if page.bodyclass %}{{page.bodyclass}}{% endif %} {% if page.header-display == "false" %}no-header{% endif %}">
+    {% include navbar.html %}
+    {% include header.html %}
+    <main>
+        <div class="container">
+            {% if page.title-display != "false" %}
+            <div class="title-container container">
+                <div class="title-wrapper">
+                    <h1>{{page.title}}</h1>
+                    {% if page.subtitle %}
+                    <h2>{{ page.subtitle }}</h2>{% endif %}
+                </div>
+            </div>
+            {% endif %}
+            {% if page.date or page.categories or page.tags %}
+            <div class="meta-data">
+                {% if page.date %}
+                <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
+                &middot;
+                {% endif %}
+                {% if page.categories %}
+                <span class="cats">Categories: {{ page.categories }}</span>
+                &middot;
+                {% endif %}
+                {% if page.tags %}
+                <span class="tags">Tags: {{ page.tags }}</span>
+                {% endif %}
+            </div>
+            {% endif %}
+            {{ content }}
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

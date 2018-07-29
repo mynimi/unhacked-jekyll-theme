@@ -1,0 +1,343 @@
+{
+  "name": "Unhacked Theme",
+  "menuSupport": "true",
+  "themeOptionsPath": "_sass/_variableoverwrite.scss",
+  "frontMatterSettings": {
+    "layout": {
+      "display": "global",
+      "type": "radio",
+      "options": [
+        "home",
+        "page",
+        "post"
+      ],
+      "defaults": {
+        "page": "page",
+        "post": "post"
+      }
+    },
+    "header-display": {
+      "display": "global",
+      "type": "radio",
+      "options": [
+        "true",
+        "false"
+      ],
+      "defaults": {
+        "page": "true",
+        "post": "true"
+      },
+      "help": "Decide if you want to show header or not."
+    },
+    "title-display": {
+      "display": "global",
+      "type": "radio",
+      "options": [
+        "true",
+        "false"
+      ],
+      "defaults": {
+        "page": "true",
+        "post": "true"
+      },
+      "help": "Decide if you want to show title in content or not"
+    },
+    "toc": {
+      "display": "page",
+      "type": "radio",
+      "options": [
+        "true",
+        "false"
+      ],
+      "defaults": {
+        "page": "false"
+      },
+      "help": "Include a Table of Contents."
+    },
+    "title": {
+      "display": "global",
+      "area": "main"
+    },
+    "subtitle": {
+      "display": "global",
+      "area": "main"
+    },
+    "permalink": {
+      "display": "page",
+      "area": "main",
+      "help": "optional if you want your permalink to not be the same as the title (format is /link/)"
+    },
+    "date": {
+      "display": "post",
+      "type": "date"
+    },
+    "description": {
+      "display": "global",
+      "type": "textarea",
+      "maxlength": 156,
+      "help": "The SEO Meta Description used"
+    },
+    "featured-image": {
+      "display": "global",
+      "type": "image"
+    },
+    "categories": {
+      "display": "post",
+      "type": "list"
+    },
+    "tags": {
+      "display": "post",
+      "type": "list"
+    },
+    "bodyclass": {
+      "display": "global",
+      "help": "additional CSS Class to be applied"
+    }
+  },
+  "themeOptions": {
+    "typography": {
+      "type": "section",
+      "vars": {
+        "main-font": {
+          "default": "'Asap', 'Helvetica', sans-serif",
+          "help": "Font to be used across site.",
+          "type": "text",
+          "value": "'Asap', 'Helvetica', sans-serif"
+        },
+        "main-font-size": {
+          "default": "18px",
+          "help": "Base font Size, used in paragraphs, will affect all other font sizes.",
+          "type": "text",
+          "value": "18px"
+        },
+        "mobile-main-font-size": {
+          "default": "20px",
+          "help": "Size of base font on mobile.",
+          "type": "text",
+          "value": "20px"
+        },
+        "main-font-weight": {
+          "default": "normal",
+          "type": "radio",
+          "options": [
+            "light",
+            "normal",
+            "bold"
+          ],
+          "value": "normal"
+        },
+        "main-line-height": {
+          "default": "1.4em",
+          "help": "Line Height generally used.",
+          "type": "text",
+          "value": "1.4em"
+        },
+        "headings-font": {
+          "default": "'Playfair Display', 'Cambria', serif",
+          "help": "Font used for headings.",
+          "type": "text",
+          "value": "'Playfair Display', 'Cambria', serif"
+        },
+        "headings-text-transform": {
+          "default": "none",
+          "type": "radio",
+          "options": [
+            "none",
+            "capitalize",
+            "uppercase",
+            "lowercase"
+          ],
+          "value": "none"
+        },
+        "headings-font-weight": {
+          "default": "bold",
+          "type": "radio",
+          "options": [
+            "light",
+            "normal",
+            "bold"
+          ],
+          "value": "bold"
+        },
+        "hyphenate": {
+          "default": "auto",
+          "type": "radio",
+          "options": [
+            "none",
+            "auto"
+          ],
+          "value": "auto"
+        },
+        "p-text-align": {
+          "default": "justify",
+          "type": "radio",
+          "options": [
+            "center",
+            "left",
+            "right",
+            "justify"
+          ],
+          "help": "Alignment of paragraph text.",
+          "value": "justify"
+        }
+      }
+    },
+    "colors": {
+      "type": "section",
+      "vars": {
+        "accent-color": {
+          "type": "color",
+          "default": "#D73D4B",
+          "value": "#d73d4b"
+        },
+        "text-color": {
+          "type": "color",
+          "default": "#484444",
+          "value": "#484444"
+        },
+        "main-background-color": {
+          "type": "color",
+          "default": "#FDFDFD",
+          "value": "#fdfdfd"
+        },
+        "link-color": {
+          "type": "color",
+          "default": "#D73D4B",
+          "value": "#d73d4b"
+        },
+        "link-hover-color": {
+          "type": "color",
+          "default": "#484444",
+          "value": "#484444"
+        }
+      }
+    },
+    "sizing": {
+      "type": "section",
+      "vars": {
+        "container-width": {
+          "default": "70%",
+          "type": "text",
+          "value": "70%"
+        },
+        "container-max-width": {
+          "default": "900px",
+          "type": "text",
+          "value": "900px"
+        },
+        "container-padding": {
+          "default": "20px",
+          "type": "text",
+          "value": "20px"
+        },
+        "title-box-padding": {
+          "default": "20px",
+          "type": "text",
+          "value": "20px"
+        },
+        "logo-max-width": {
+          "default": "150px",
+          "type": "text",
+          "value": "150px"
+        }
+      }
+    },
+    "breakpoints": {
+      "type": "section",
+      "vars": {
+        "font-break": {
+          "default": "700px",
+          "help": "Screen width, when mobile font size starts being used.",
+          "type": "text",
+          "value": "700px"
+        },
+        "title-box-break": {
+          "default": "1000px",
+          "help": "Screen width, when Title Box starts being displayed underneath header image.",
+          "type": "text",
+          "value": "1000px"
+        },
+        "nav-break": {
+          "default": "800px",
+          "help": "Screen width, when Navigation breaks into Off-Screen Sidebar Menu",
+          "type": "text",
+          "value": "800px"
+        }
+      }
+    },
+    "header": {
+      "type": "section",
+      "vars": {
+        "header-image": {
+          "type": "image",
+          "default": "/assets/dlanor-s-654085-unsplash.jpg",
+          "value": "/assets/dlanor-s-654085-unsplash.jpg"
+        },
+        "home-header-ratio-width": {
+          "default": "16",
+          "type": "text",
+          "value": "16"
+        },
+        "home-header-ratio-height": {
+          "default": "7",
+          "type": "text",
+          "value": "7"
+        },
+        "post-header-ratio-width": {
+          "default": "3",
+          "type": "text",
+          "value": "3"
+        },
+        "post-header-ratio-height": {
+          "default": "1",
+          "type": "text",
+          "value": "1"
+        },
+        "page-header-ratio-width": {
+          "default": "6",
+          "type": "text",
+          "value": "6"
+        },
+        "page-header-ratio-height": {
+          "default": "1",
+          "type": "text",
+          "value": "1"
+        },
+        "image-dark": {
+          "type": "radio",
+          "default": "false",
+          "options": [
+            "true",
+            "false"
+          ],
+          "help": "Is the Header Image Dark or Light",
+          "value": "false"
+        },
+        "title-background-box": {
+          "type": "radio",
+          "default": "true",
+          "options": [
+            "true",
+            "false"
+          ],
+          "help": "Display Box behind Title on header.",
+          "value": "true"
+        }
+      }
+    }
+  },
+  "publicationSettings": {
+    "ftp": {
+      "ftpHost": "",
+      "ftpUsername": "",
+      "ftpPort": "",
+      "ftpDirectory": ""
+    },
+    "gitHub": {
+      "gitHubUsername": "mynimi",
+      "gitHubUserEmail": "myriam@halfapx.com",
+      "gitHubRepoName": "unhacked-jekyll-theme"
+    },
+    "method": "github"
+  }
+}

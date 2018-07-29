@@ -1,0 +1,26 @@
+<span class="navtrigger">Menu</span>
+<div class="navigation">
+    <span class="navclose">Close</span>
+    {% if site.data.menu.dropdown %}
+    <ul>
+        {% for item in site.data.menu.dropdown %}
+            <li class="{% if item.url == page.url %}active{% endif %} {% if item.children %}parent{% endif %}">
+                {% if item.children %}
+                    <span>{{ item.title }}</span>
+                    <ul>
+                        {% for entry in item.children %}
+                        <li class="{% if item.url == page.url %}active{% endif %}">
+                            <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <a href="{{ item.url | | relative_url}}">{{ item.title }}</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <span>Seems like you have no menu data setup.</span>
+    {% endif %}
+</div>

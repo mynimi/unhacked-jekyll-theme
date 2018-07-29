@@ -1,0 +1,14 @@
+title: unHack for jekyll
+email: myriam@halfapx.com
+description: 'a customizeable jekyll theme, made for unhack'
+baseurl: /unhacked-jekyll-theme
+url: 'https://code.halfapx.com/'
+markdown: kramdown
+sass:
+  sass_dir: _sass
+permalink: pretty
+themename: unhacked
+excerpt_separator: <!--more-->
+brand-logo: /assets/unhacked.svg
+plugins:
+  - jekyll-autoprefixer

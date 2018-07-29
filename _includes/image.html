@@ -1,0 +1,3 @@
+<a {% if include.wide %}class="wide" {% endif %} href="{{ include.filename | prepend: '/assets/' | relative_url }}">
+    <img alt="{{ include.filename }}" src="{{ include.filename | prepend: '/assets/' | relative_url }}">
+</a>

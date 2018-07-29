@@ -1,0 +1,11 @@
+<title>{{ site.title }}{% if page.title %} - {{ page.title }} {% endif%}</title>
+{% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+{% endif %}
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="{{ site.author }}">
+<link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Playfair+Display:400,400i,700,700i|Ubuntu+Mono:400,400i"
+    rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/styles.css'  | relative_url }}">

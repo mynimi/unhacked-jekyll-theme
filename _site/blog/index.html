@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>unHack for jekyll - Blog </title>
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="">
+<link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Playfair+Display:400,400i,700,700i|Ubuntu+Mono:400,400i"
+    rel="stylesheet">
+<link rel="stylesheet" href="/unhacked-jekyll-theme/assets/styles.css">
+
+</head>
+<body class="page  no-header">
+    <div class="navbar">
+    <div class="container container-wide">
+        <a href="/unhacked-jekyll-theme/" class="brand">
+            
+                <img src="/unhacked-jekyll-theme/assets/unhacked.svg" alt="logo">
+             
+        </a>
+        <span class="navtrigger">Menu</span>
+<div class="navigation">
+    <span class="navclose">Close</span>
+    
+    <ul>
+        
+            <li class=" ">
+                
+                    <a href="/unhacked-jekyll-theme/">Index</a>
+                
+            </li>
+        
+            <li class="active ">
+                
+                    <a href="/unhacked-jekyll-theme/blog/">Blog</a>
+                
+            </li>
+        
+            <li class=" ">
+                
+                    <a href="/unhacked-jekyll-theme/archive/">Monthly Archive</a>
+                
+            </li>
+        
+            <li class=" parent">
+                
+                    <span>More</span>
+                    <ul>
+                        
+                        <li class="">
+                            <a href="https://github.com/mynimi/unhacked-jekyll-theme">Find on GitHub</a>
+                        </li>
+                        
+                        <li class="">
+                            <a href="https://unhacked.halfapx.com/">Learn About unHack</a>
+                        </li>
+                        
+                    </ul>
+                
+            </li>
+        
+    </ul>
+    
+</div>
+    </div>
+</div>
+    
+    <main>
+        <div class="container">
+            
+            <div class="title-container container">
+                <div class="title-wrapper">
+                    <h1>Blog</h1>
+                    
+                    <h2>Site that used the Article Index include</h2>
+                </div>
+            </div>
+            
+            
+            
+            <p>Displaying the Article Index:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% for post in site.posts limit: 30 %}
+{% include article_index.html %}
+{% endfor %}
+{% if posts.size &gt; 30 %} [all posts](/archive) {% endif %}
+
+</code></pre></div></div>
+
+<article>
+    
+    <a href="/unhacked-jekyll-theme/category/2018/07/29/an-example-post/">
+        <div class="feat-img">
+            <div class="background" style="background-image: url(/unhacked-jekyll-theme/assets/henry-be-99471-unsplash.jpg);"></div>
+        </div>
+    </a>
+    
+    <div class="post-info">
+        <div class="title">
+            <h1>
+                <a href="/unhacked-jekyll-theme/category/2018/07/29/an-example-post/">An Example Post</a>
+            </h1>
+            
+            <h2 class="subtitle">
+                <a href="/unhacked-jekyll-theme/category/2018/07/29/an-example-post/">it even comes with a subtitle</a>
+            </h2>
+            
+        </div>
+        <p class="meta-data">
+            <span class="date">July 29, 2018</span>
+            
+            &middot;
+            <span class="tags">
+                
+                    <span>tag1</span>
+                
+                    <span>tag2</span>
+                
+                    <span>tag3</span>
+                
+            </span> 
+        </p>
+        
+            <p>This is the snippet, everything meant to be displayed on the blog page.</p>
+
+
+        
+        <a href="/unhacked-jekyll-theme/category/2018/07/29/an-example-post/" class="btn">Read More</a>
+    </div>
+</article>
+
+
+        </div>
+    </main>
+    <footer>
+    <div class="container container-wide">
+        <span>
+            &copy; 2018 unHack for jekyll. All Rights Reserved. &middot; Unhack Theme by <a href="http://halfapx.com" target="_blank">halfapx</a>
+        </span>
+        <span><a href="#">Back To Top</a></span>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/unhacked-jekyll-theme/assets/main.js"></script>
+</body>
+</html>

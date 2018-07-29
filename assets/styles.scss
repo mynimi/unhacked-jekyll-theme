@@ -1,0 +1,31 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later # only Main files contain this front matter, not partials.
+---
+
+// Some Settings
+//----------------
+
+// define URL to image here, this will be used as header image if none is defined within page/post
+$header-image: "{{'/assets/biel-morro-259739-unsplash.jpg' | relative_url }}" !default;
+
+$home-header-ratio-width: 16 !default;
+$home-header-ratio-height: 7 !default;
+
+$post-header-ratio-width: 3 !default;
+$post-header-ratio-height: 1 !default;
+
+$page-header-ratio-width: 6 !default;
+$page-header-ratio-height: 1 !default;
+
+$image-dark: false !default; // [true or false]
+$title-background-box: true !default; 
+$accent-color: #D73D4B !default;
+$logo-max-width: 150px !default;
+$nav-break: 800px !default;
+$nav-fixed: true !default;
+
+@import 'variableoverwrite';
+
+@import "{{ site.themename }}";
+
+// Add any custom CSS to overwrite Theme Styles here 

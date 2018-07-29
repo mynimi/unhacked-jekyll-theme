@@ -1,0 +1,8 @@
+footer{
+    .container{
+        @include flexbox(row, wrap, space-between, center);
+        span {
+            padding: 10px;
+        }
+    }
+}
