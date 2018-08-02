@@ -9,5 +9,6 @@ sass:
 permalink: pretty
 excerpt_separator: <!--more-->
 brand-logo: /assets/unhacked.svg
+themename: unhacked
 plugins:
   - jekyll-autoprefixer
