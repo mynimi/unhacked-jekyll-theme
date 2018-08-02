@@ -7,7 +7,6 @@ markdown: kramdown
 sass:
   sass_dir: _sass
 permalink: pretty
-themename: unhacked
 excerpt_separator: <!--more-->
 brand-logo: /assets/unhacked.svg
 plugins:
